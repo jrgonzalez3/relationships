@@ -21,7 +21,8 @@ class UserResource extends JsonResource
             'email' => $this->email,
             'phone' => $this->phone,
             'phones' => $this->phones,
-            'phonef' => '(' . $this->phone->prefix . ')' . $this->phone->phone_number
+            'phonef' => '(' . $this->phone->prefix . ')' . $this->phone->phone_number,
+            'roles' => $this->roles
         ];
     }
 }
